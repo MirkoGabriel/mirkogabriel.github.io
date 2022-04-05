@@ -45,6 +45,22 @@ h3, h4, h5, h6, p, ul,li {
 .git:hover {
     background-image: url('img/git.png');
 }
+.phn {
+    background-image: url('img/phoneh.png');
+    background-position: 0px 0px;
+    background-size: cover;
+}
+.phn:hover {
+    background-image: url('img/phone.png');
+}
+.email {
+    background-image: url('img/mailh.png');
+    background-position: 0px 0px;
+    background-size: cover;
+}
+.email:hover {
+    background-image: url('img/mail.png');
+}
 
 .red 
 {
