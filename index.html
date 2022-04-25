@@ -7,7 +7,7 @@
     <link href="index.css" rel="stylesheet"/>
     <title>Mirko CV</title>
     <script> 
-        function screenResolution(texto){
+        function screenResolution(texto,href){
             //alert("La resolución de tu pantalla es: " + screen.width + " x " + screen.height);
             var a = navigator.userAgent;
             var agents = new Array("iPhone","iPad","Android","SymbianOS", "Windows Phone","iPod");
@@ -23,6 +23,8 @@
             if(flag)
             {
                 alert("Ups! estas en PC de escritorio mi " + texto);
+            }else{
+                window.location.href = href;
             }
         }
     </script>
@@ -53,8 +55,8 @@
                 </p>
                 <br>
                 <h4 class="datos">CONTACTO</h4>
-                <a class="red phn" href="tel:+5491169535720" onclick="screenResolution('número es 1169535720')"></a>
-                <a class="red email" href="mailto:mirkogabriel67@gmail.com" onclick="screenResolution('email es mirkogabriel67@gmail.com')"></a>
+                <a class="red phn" onclick="screenResolution('número es 1169535720','tel:+5491169535720')"></a>
+                <a class="red email" onclick="screenResolution('email es mirkogabriel67@gmail.com','mailto:mirkogabriel67@gmail.com')"></a>
                 <br>
                 <br>
                 <br>
