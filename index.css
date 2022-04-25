@@ -14,6 +14,7 @@ h3, h4, h5, h6, p, ul,li {
     display: flex;
     flex-wrap: wrap;
     width: 996px;
+    max-width: 120% !important;
 }
 
 .in-flex{
