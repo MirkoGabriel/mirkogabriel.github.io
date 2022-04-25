@@ -6,6 +6,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="index.css" rel="stylesheet"/>
     <title>Mirko CV</title>
+    <script> 
+        function screenResolution(){
+            //alert("La resolución de tu pantalla es: " + screen.width + " x " + screen.height);
+            var a = navigator.userAgent;
+            var agents = new Array("iPhone","iPad","Android","SymbianOS", "Windows Phone","iPod");
+            var flag = true;
+            for(var i = 0; i < agents.length; i++)
+            {
+                if(a.indexOf(agents[i]) > 0)
+                {
+                    flag = false;
+                    break;
+                }
+            }
+            if(flag)
+            {
+                alert("Ups! estas viendo mi CV desde una PC mi telefono es 1169535720");
+            }
+        }
+    </script>
 </head>
 <body class="row align-items-center justify-content-center vh-100 p-5">
         <section class="home p-5">
@@ -33,7 +53,7 @@
                 </p>
                 <br>
                 <h4 class="datos">CONTACTO</h4>
-                <a class="red phn" href="tel:+5491169535720"></a>
+                <a class="red phn" href="tel:+5491169535720" onclick="screenResolution()"></a>
                 <a class="red email" href="mailto:mirkogabriel67@gmail.com"></a>
                 <br>
                 <br>
