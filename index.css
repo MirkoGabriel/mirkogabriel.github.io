@@ -69,11 +69,13 @@ h3, h4, h5, h6, p, ul,li {
     height: 40px;
     margin-right: 4px;
     margin-left: 4px;
-    float: left;
     display: inline-block;
 }
 
 img { 
     max-width: 100%;
     height: auto;
+}
+.swal-footer{
+    text-align: center !important;
 }
